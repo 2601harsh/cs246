@@ -109,10 +109,12 @@ int main() {
             }
         }else if(op==5){
             cout<<"global depth"<<" "<<g_dep<<endl;
+            cout<<"no_of_buckets"<<" "<<to_g.size()<<endl;
             for(int i=0;i<to_g.size();i++){
-                for(int j=0;j<to_g[i]->data.size();j++){
-                    cout<<to_g[i]->data[j]<<" ";
-                }
+                cout<<to_g[i]->data.size()<<" "<<to_g[i]->local_dep;
+//                for(int j=0;j<to_g[i]->data.size();j++){
+//                    cout<<to_g[i]->data[j]<<" ";
+//                }
                 cout<<endl;
             }
         }else{
